@@ -1,0 +1,272 @@
+:root{
+    --text-secondary:#5d5c68;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+}
+
+/* navigaion */
+.nav{
+    width: 100%;
+    background-color: #f8fafc;
+    border: 1px solid #64748b;
+    top: 0;
+    
+}
+.nav-main{
+    display: flex;
+    padding: 10px;
+}
+.logo{
+    width: 30rem;
+}
+.logo-icon{
+    color: #fc4173;
+}
+.search{
+    width: 100%;
+}
+.search-box{
+    border: 1px solid #000;
+    width: 400px;
+    border-radius: 25px;
+    padding: 10px;
+
+}
+.search-box input{
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.search-btn{
+padding: 15px;
+border-radius: 25px;
+background-color: #fc4173;
+}
+
+.menu{
+    width: 30rem;
+}
+.menu-icon{
+    padding: 10px;
+    border: 1px solid #5d5c68;
+    border-radius: 50%;
+    align-self: center;
+    transition: .5s;
+
+}
+.menu-icon:hover{
+    background-color: #fc4173;
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* container */
+.container{
+    display: flex;
+}
+.col{
+    height: 200vh;
+}
+/* left */
+.left{
+    width: 30rem;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.w-100{
+    width: 100%;
+}
+.rounded{
+    border-radius: 50%;
+}
+.text-center{
+    text-align: center;
+}
+.left-img{
+    width: 35%;
+    border-radius: 50%;
+    border: 5px solid #fc4173;
+}
+.left-menu{
+    list-style: none;
+
+}
+.menu-list-item{
+    padding-left: 30px ;
+    border-left: 2px solid #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:10px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.active{
+    color: #fc4173;
+    border-color: #fc4173;
+}
+.left-menu > .animate{
+transition: .5s;
+}
+.left-menu > .animate:hover{
+    transform: translateY(-8px)!important;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+}
+/* center */
+
+
+.center{
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.active-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fc4173;
+}
+.btn{
+    padding: 10px ;
+    border-radius: 20px;
+    border: none;
+    background-color: #eee;
+}
+.bg-transparent{
+    background: transparent;
+}
+.bg-white{
+    background-color: #fff;
+}
+.post-card{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.post-img{
+    width: 50px;
+    border-radius: 50%;
+}
+.post-card-img{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.comment-box{
+    width: 100%;
+    border: 1px solid;
+    border-radius: 25px;
+    
+    
+}
+.comment-box input[type="text"]{
+    border: none;
+    padding-left: 10px;
+}
+.comment-box input[type="text"]:focus{
+  outline: none;
+  
+}
+
+
+/* right */
+.right{
+    width: 30rem;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.text-secondary{
+    color: var(--text-secondary);
+}
+.right-main{
+    column-count: 2;
+    column-gap: 10px;
+}
+.right-img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sug-box-img{
+    border-radius: 50%;
+    height: 50px;
+}
+/* flex */
+.d-flex{
+    display: flex;
+
+}
+.justify-content-space-evenly{
+justify-content: space-evenly;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-start{
+    justify-content: start;
+}
+.align-items-center{
+    align-items: center;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+/* bold */
+.fw-bold{
+    font-weight: bold;
+}
+/* margin */
+.my-2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mb-1{
+    margin-bottom: 10px;
+}
+.mb-2{
+    margin-bottom: 20px;
+}
+.mt-2{
+    margin-top: 20px;
+}
+.mt-3{
+    margin-top: 30px;
+}
+.ml-1{
+    margin-left: 10px;
+}
+.mr-1{
+    margin-right:10px;
+}
+/* padding */
+.p-1{
+    padding: 10px;
+}
+.p-2{
+    padding: 20px;
+}
+.px-7{
+    padding-left:70px ;
+    padding-right: 70px;
+}
+.px-6{
+    padding-left:60px ;
+    padding-right: 60px;
+}
+.px-2{
+    margin-left: 20px;
+    margin-right: 10px;
+}
